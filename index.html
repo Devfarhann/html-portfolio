@@ -3,39 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
-    <input type="number" id="first" name="first" />
-    <select id="ope">
-      <option value="+">+</option>
-      <option value="-">-</option>
-      <option value="*">*</option>
-      <option value="/">/</option>
-    </select>
-    <input type="number" id="second" name="second" />
-    <button onclick="third()">Calculate</button>
-    <input type="text" name="" id="res" readonly="" />
+  <body style="background-color: black">
+    <div
+      class="box"
+      style="
+        height: 350px;
+        width: 600px;
+        border-color: rgb(0, 0, 0);
+        border-style: solid;
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 400px;
+        border-width: 5px;
+        box-shadow: 2px 2px 30px white;
+      "
+    >
+      <img
+        src="https://th.bing.com/th/id/OIP.Msv903GpnqjMZBHpyAwQUQHaGE?pid=ImgDet&w=191&h=156&c=7&dpr=1.5"
+        alt="kuch nhi tha  bhai"
+        style="height: 350px; width: 600px"
+      />
+    </div>
+    <div class="text">
+      <h1
+        style="
+          font-family: 'Times New Roman', Times, serif;
+          text-align: center;
+          color: white;
+          position: absolute;
+          margin-top: 420px;
+          margin-left: 530px;
+          font-size: 60px;
+          text-shadow: 2px 2px 5px white;
+        "
+      >
+        SHINCHAN
+      </h1>
+      <br />
+      <p
+        style="
+          font-family: 'Times New Roman', Times, serif;
+          text-align: center;
+          color: white;
+          position: absolute;
+          margin-top: 470px;
+          margin-left: 430px;
+          font-size: 30px;
+          text-shadow: 1px 1px 5px white;
+        "
+      >
+        One of my favourite cartoon of childhood.
+      </p>
+    </div>
   </body>
-  <script type="text/javascript">
-    function third() {
-      var opt1 = document.getElementById("first").value;
-      var opt2 = document.getElementById("second").value;
-      var ope = document.getElementById("ope").value;
-      if (ope == "+") {
-        var res = parseInt(opt1) + parseInt(opt2);
-      }
-      if (ope == "-") {
-        var res = parseInt(opt1) - parseInt(opt2);
-      }
-      if (ope == "*") {
-        var res = parseInt(opt1) * parseInt(opt2);
-      }
-      if (ope == "/") {
-        var res = parseInt(opt1) / parseInt(opt2);
-      }
-      document.getElementById("res").value = res;
-    }
-  </script>
 </html>
